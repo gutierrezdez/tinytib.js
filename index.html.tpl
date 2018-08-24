@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<!-- Copyright (c) 2010-2018 Razortooth Communications, LLC. All rights reserved. -->
+		<!-- See License.txt -->
+		<META HTTP-EQUIV="Expires" CONTENT="-1">
+		<!-- <META HTTP-EQUIV="Expires" CONTENT="Sat, 1 Jan 2005 00:00:00 GMT"> -->
+		<META HTTP-EQUIV="Last-Modified" CONTENT="Sat, 1 Jan 1971 00:00:00 GMT">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="must-revalidate">
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <title>Tiny TIB (Test In Browser) 0.1.2</title>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="js/idb.filesystem.min.js" type="text/javascript"></script>
+        <script language="JavaScript" type="text/javascript">
+            %s
+        </script>
+		<script src="js/tinytib.js" type="text/javascript"></script>
+        <!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite-beta.js"></script> -->
+        <script language="JavaScript" type="text/javascript">
+        // Try to avoid frame busting
+        if (top.frames.length!=0)
+        top.location=self.document.location;
+        </script>
+	</head>
+	<body>
+		<div id="status">
+			<p><span id="timestamp"></span><span id="errors"></span><span id="config"></span></p>
+		</div>
+		<br/>
+		<img src="https://www.yahoo.com/favicon.ico" width="10" height="10" onerror="setNoConnection()" />
+		<input type="button" name="halt" id="halt" value="Halt" /><input type="button" name="logdump" id="logdump" value="Log Dump" /><input type="button" name="resetlog" id="resetlog" value="Reset Log" /><input type="button" name="clear" id="clear" value="Clear" /><input type="button" name="wakeup" id="wakeup" value="Wakeup" />
+		<br />
+		<div id="logoutput"></div>
+		<IFRAME id="displaywindow" target="_blank" WIDTH="100%%" HEIGHT="100%%">
+			If you can see this, your browser doesn't 
+			understand IFRAME.  Please contact your supervisor.
+		</IFRAME>
+	<body>
+</html>

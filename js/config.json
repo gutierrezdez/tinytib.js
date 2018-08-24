@@ -1,0 +1,12 @@
+{
+    "timeout" : "20000"
+    ,"warmup" : "1000"
+    ,"logfile" : "tinytibrunnerlog.txt"
+    ,"autostart" : true
+    ,"numberoftests" : "5"
+    ,"testcase-1" : "http://www.bing.com"
+    ,"testcase-2" : "file:///mnt/extSdCard/test.html"
+    ,"testcase-3" : "http://www.yelp.com"
+    ,"testcase-4" : "http://www.news.com"
+    ,"testcase-5" : "http://www.aol.com"
+}
