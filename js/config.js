@@ -4,10 +4,13 @@ var CONFIG = {
     ,"logfile" : "tinytibrunnerlog.txt"
     ,"mediapath": "/tmp"
     ,"autostart" : true
+    ,"fakewake" : false
+    ,"hidecontrols": true
+    ,"hidestatus": false
     ,"numberoftests" : "5"
-    ,"testcase-1" : "http://www.cnn.com"
+    ,"testcase-1" : "http://hrf.org"
     ,"testcase-2" : "http://www.espn.com"
-    ,"testcase-3" : "http://www.nytimes.com"
-    ,"testcase-4" : "http://www.washingtonpost.com"
-    ,"testcase-5" : "http://www.aol.com"
+    ,"testcase-3" : "http://nps.gov"
+    ,"testcase-4" : "http://www.creativeapplications.net"
+    ,"testcase-5" : "http://www.coliseum.com/"
 }

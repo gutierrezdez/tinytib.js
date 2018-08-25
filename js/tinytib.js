@@ -36,12 +36,10 @@ if (typeof require == "function" && typeof module == "object") {
 }
 */
 
-// XXX We should put this into a namespace
-var VERSION = "0.1.2"
+var VERSION = "0.2.1"
 var BROWSER_WINDOW_REF; // XXX NOT USED IF WE DON'T POP UP MENUS
 var FS_HANDLE; // XXX We store this but don't use it
 var FS_ACTIVATE = false;
-var FAKEWAKE = false; // XXX Turn this off, I don't think it works
 var FAKEWAKE_INTERVAL = 20000; // XXX For now hardcode this in.
 var LOOP_INTERVAL;
 
@@ -233,13 +231,16 @@ $(document).ready(function() {
   $("#timestamp").append(new Date());
   $("#config").append(JSON.stringify(CONFIG));
 
-  if (FAKEWAKE) {
+  if (CONFIG.fakewake) {
     setInterval(function() {
         $('#wakeup').trigger('click');
         console.log("Clicked the wakeup button at " + new Date());
     }, FAKEWAKE_INTERVAL);
   }
 
+  if (CONFIG.hidecontrols) {
+    $('#controls').hide();
+  }
   if (CONFIG.autostart) {
     // XXX Technically this can bomb if number of tests don't match our URLs
     var i = 1;
