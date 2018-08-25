@@ -6,7 +6,7 @@ var CONFIG = {
     ,"autostart" : true
     ,"fakewake" : false
     ,"hidecontrols": true
-    ,"hidestatus": false
+    ,"hidestatus": true
     ,"numberoftests" : "5"
     ,"testcase-1" : "http://hrf.org"
     ,"testcase-2" : "http://www.espn.com"

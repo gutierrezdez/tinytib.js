@@ -241,6 +241,10 @@ $(document).ready(function() {
   if (CONFIG.hidecontrols) {
     $('#controls').hide();
   }
+
+  if (CONFIG.hidestatus) {
+    $('#status').hide();
+  }
   if (CONFIG.autostart) {
     // XXX Technically this can bomb if number of tests don't match our URLs
     var i = 1;
