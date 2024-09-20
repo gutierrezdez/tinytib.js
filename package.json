@@ -3,7 +3,7 @@
     "eslint": "9.10.0"
   },
   "scripts": {
-    "lint:js": "eslint src/**/*.js",
+    "lint:js": "eslint js/**/*.js",
     "lint": "npm run lint:js"
   }
 }
