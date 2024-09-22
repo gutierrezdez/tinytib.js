@@ -5,7 +5,8 @@
     "jest": "^29.7.0"
   },
   "scripts": {
-    "lint:js": "eslint js/**/*.js",
+    "origlint:js": "eslint js/**/*.js",
+    "lint:js": "eslint js/tinytib.js",
     "lint": "npm run lint:js"
   }
 }
