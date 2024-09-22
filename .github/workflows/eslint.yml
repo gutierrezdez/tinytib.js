@@ -24,7 +24,8 @@ env: # environment variables (available in any part of the action)
 jobs:
   eslint:
     name: Run eslint scanning
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: read
       security-events: write
