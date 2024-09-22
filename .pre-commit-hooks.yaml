@@ -201,6 +201,6 @@
     name: trim trailing whitespace
     description: trims trailing whitespace.
     entry: trailing-whitespace-fixer
-    language: python
+    language: node
     types: [text]
     stages: [commit, push, manual]
