@@ -34,7 +34,7 @@ jobs:
 
       - uses: pre-commit/action@v3.0.0
         with: 
-          extra_args: --all-files trailing-whitespace 
+          extra_args: --all-files trailing-whitespace
       - name: Install ESLint
         if: success() || failure()
         run:
