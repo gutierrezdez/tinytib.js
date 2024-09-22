@@ -30,7 +30,7 @@ jobs:
 
       - uses: pre-commit/action@v3.0.0
         with: 
-          extra_args: trailing-whitespace
+          extra_args: trailing-whitespace js/tintib.js
   eslint:
     name: Run eslint scanning
     runs-on: ubuntu-latest
