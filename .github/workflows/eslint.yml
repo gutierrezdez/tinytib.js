@@ -19,13 +19,13 @@ on:
     - cron: '39 17 * * 0'
 
 env: # environment variables (available in any part of the action)
-  NODE_VERSION: 16
+  NODE_VERSION: 18
 
 jobs:
   eslint:
     name: Run eslint scanning
     runs-on: ubuntu-latest
-    # runs-on: self-hosted
+    #runs-on: self-hosted
     permissions:
       contents: read
       security-events: write
