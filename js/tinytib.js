@@ -275,4 +275,6 @@ $(document).ready(function() {
   } else {
     alert("Implement manual loop startup");
   }
-});
+});                  
+
+        
