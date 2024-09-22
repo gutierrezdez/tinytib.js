@@ -27,7 +27,7 @@ So Tinytib.js was born.  It stands for "Tiny Test In Browser".  Use it, extend i
 - I haven't tested on iOS.  Please do so if you have time.
 - I didn't have time to figure out the browser based module loading commonJS or browserify stuff.  I know it's simple, but I had something to deliver.
 - File based logging was on the list of things to do, but due to HTML5 limitations, browser shims, my lack of experience with the filesystem code, and poor browser support, I put it aside.
-- I'm using jquery.  If that makes me inpure, sorry!  Jquery helped, but probably could be refactored out.
+- I'm using jquery.  If that makes me impure, sorry!  Jquery helped, but probably could be refactored out.
 
 ## Future Ideas
 
